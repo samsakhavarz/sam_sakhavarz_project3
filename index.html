@@ -4,18 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Coach Taylor Random Quizz Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles/_style.css">
     
 </head>
 <body>
+    <header>
+        <div class="title-container">
+            <h1>Coach Taylor's Random Quote Generator</h1>
+        </div>
+    </header>
+
+    <main>
+
+<!-- INTRO SECTION -->
+        <section class="intro">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ea quam voluptatem sit, quasi eos dolorem ullam ipsa, mollitia expedita labore vitae necessitatibus quo, blanditiis quisquam cumque? Alias repudiandae amet, vitae voluptatem illo provident non?</p>
+        </section>
+
+<!-- QUOTE GENERATOR SECTION -->
+        <section class="quote-input">
+
+            <div class="photo-container">
+                <img src="assets/Coach-Taylor.jpg" alt="">
+            </div>
+
+
+            <div class="quote-selector">
+                <form action="">
+                    <label for="category">Pick a Category</label>
+
+                    <select name="category" id="category">
+                        <option value="motivation">I need some motivation</option>
+                        <option value="quitting">I feel like quitting</option>
+                        <option value="defeated">I feel so defeated</option>
+                    </select>
+
+                    <input type="submit" value="Give it to me straight, Coach.">
+
+                </form>
+            </div>
+        </section>
+   
+            <section class="quote-result-hidden">
+                <p class="hidden-quote"></p>
+
+
+                <button class="reset">I want another quote</button>
+            </section>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
     
 
 
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="scripts/app.js"></script>
 
 </body>
 </html>
