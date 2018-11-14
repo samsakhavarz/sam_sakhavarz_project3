@@ -5,15 +5,23 @@
     // they can then click an option to select another quote
 
 // JAVASCRIPT MECHANICS -----------
-    // 1. store the quotes as strings in a set of arrays. there are 3 types/categories of quotes, so we will need 3 x arrays containing our strings. each array contains 5 quotes/strings. 15 quotes in total!
+    // 1. store the quotes as strings in a set of arrays. 
+    //there are 3 types/categories of quotes, so we will need 
+    //3 x arrays containing our strings. each array contains 5 quotes/strings. 15 quotes in total!
 
     // 2. a form, using the select/option(drop-down) will allow user to select their quote topic.
+    // Is it really best to use a dropdown? There are only three choices --- it would be the correct decision for scale buuuut i would consider radio buttons in this situation :)
+
 
     // 3. upon selection of a topic, the corresponding array will trigger to be made available 
+    // what do you meant "trigger to be made available?" im not trying to be annoying but maybe be more clear. Upon selection of a topic the code will return the corresponding array is much stronger verbage and will help focus your dev efforts :)
+
 
     // 4. after the topic is selected, the submit button should iterate of the corresponding array and randomly select a string from the list of 5.
+    // this is good! There are a lot of ways to return a random element from an array. 
 
     // 5. the reset button should allow for a click to clear the current quote entry and revert back to a default state
+    // i like this too. "State" you will encounter very very soon. 
 
    
 
@@ -63,7 +71,16 @@ $(function() {
     // write a function that will reload the page, clearing content back to default user state
 
 
+    // this pseudocode is generally looking good! :)
 
+    // my only advice is to get more _agile_ with  your milestones; by that I mean  --- the logic for selecting one array via the user interface is 100% reusable for the other arrays so if you perfect that you may not have to do it three times :)
+
+    //function giveQuoteType(selectedType){
+      //  if selected type === blah blah
+        //return array
+
+        // AH IVE SAID TOO MUCH ;)
+    //}
 
     
 
