@@ -1,0 +1,81 @@
+
+.header {
+    background-image: url(/assets/football-stadium.png);
+    height: 105vh;
+}
+
+main {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+.intro {
+    background: $bg-color;
+    padding: 3%;
+    width: 100%;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); 
+}
+
+// FORM SECTION ----------------
+label, select, input {
+    margin: 2% 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select {
+  width: 50%;
+  height: 80px;
+  padding: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+  @include copy-text;
+  @include box-shadow; 
+}
+
+option {
+  padding: 5PX;
+}
+
+// QUOTE SECTION ------------------
+.quote-container {
+    position: relative;
+    display: block;
+    height: 50vh;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(/assets/Coach-Taylor.jpg);
+    background-size: cover;
+    @include box-shadow;  
+}
+
+.quote-block {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    border-radius: 15px;
+    @include copy-text;
+    @include baseFont(24);
+    text-align: center;
+    padding: 2%;
+    color: $bg-color;
+}
+
+
+// FOOTER SECTION -----------------
+
+footer {
+    background: $text-color;
+    height: 20vh;
+}

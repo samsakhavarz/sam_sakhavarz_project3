@@ -5,61 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coach Taylor Random Quizz Generator</title>
-    <link href="https://fonts.googleapis.com/css?family=Graduate|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles/_style.css">
     
 </head>
+
 <body>
-    <header>
-        <div class="title-container">
-            <h1>Coach Taylor's Random Quote Generator</h1>
+
+    <header class="header"> 
+        <div class="wrapper">
+            <div class="flex-container">
+                <div class="title-container">
+                    <h1 class="title">Random Pep Talks</h1>
+                    <h2 class="sub-title">With Coach Taylor</h2>
+                </div> 
+    
+                <div class="intro">
+                    <p class ="body-copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ea quam voluptatem sit, quasi eos dolorem ullam ipsa, mollitia expedita labore vitae necessitatibus quo, blanditiis quisquam cumque? Alias repudiandae amet, vitae voluptatem illo provident non?</p>
+                </div>
+
+                <div class="button">
+                    <a href="#start" class="scroll-button">Help me out, Coach</a>
+                </div>
+            </div>
         </div>
     </header>
-
-    <main>
-
-<!-- INTRO SECTION -->
-        <section class="intro">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ea quam voluptatem sit, quasi eos dolorem ullam ipsa, mollitia expedita labore vitae necessitatibus quo, blanditiis quisquam cumque? Alias repudiandae amet, vitae voluptatem illo provident non?</p>
-        </section>
-
+        
 <!-- QUOTE GENERATOR SECTION -->
-        <section class="quote-input">
-
-            <div class="photo-container">
-                <img src="assets/Coach-Taylor.jpg" alt="">
-            </div>
-
-
-            <div class="quote-selector">
-                <form action="">
-                    <label for="category">Pick a Category</label>
-
-                    <select name="category" id="category">
-                        <option value="motivation">I need some motivation</option>
-                        <option value="quitting">I feel like quitting</option>
-                        <option value="defeated">I feel so defeated</option>
-                    </select>
-
-                    <input type="submit" value="Give it to me straight, Coach.">
-
-                </form>
-            </div>
-        </section>
-   
-            <section class="quote-result-hidden">
-                <p class="hidden-quote"></p>
-
-
-                <button class="reset">I want another quote</button>
+    <main> 
+        <div class="wrapper" id="start">
+            <section class="quote-input">               
+                <div class="quote-selector">
+                    <form action="" id="start">
+                        <label class="body-copy" for="category">What's on your mind, Champ? (Pick a topic)</label>
+                            
+                        <select name="category" id="category">
+                            <option value="motivation">I need some motivation</option>
+                            <option value="quitting">I feel like quitting</option>
+                            <option value="defeated">I feel so defeated</option>
+                        </select>
+                            
+                        <input class="button" type="submit" value="Give it to me straight, Coach.">                       
+                    </form>
+                </div>   
             </section>
-
-
+        </div>
+            
+        <div class="quote-wrapper">
+            <div class="wrapper">
+                <section class="quote-container">
+                    <div class="quote-block"></div>
+                </section> 
+            </div>
+        </div>
+                               
 
     </main>
+        
 
+        
     <footer>
-
+            
     </footer>
     
 
@@ -68,6 +74,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 <script src="scripts/app.js"></script>
 
 </body>

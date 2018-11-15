@@ -131,3 +131,143 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+img {
+  max-width: 100%; }
+
+body {
+  background: #FAFAFA; }
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 80%; }
+
+.body-copy {
+  font-family: 'Montserrat', sans-serif;
+  color: #282a2d;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 2.8rem; }
+
+.title, .sub-title {
+  font-family: 'Graduate', cursive;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-size: 12rem;
+  margin: 0;
+  text-align: center;
+  padding: 5% 0;
+  text-shadow: 0 0 3px #fdf151, 0 0 3px #fdf151, 0 0 3px #fdf151; }
+
+.sub-title {
+  font-size: 65px;
+  font-size: 6.5rem; }
+
+.button {
+  font-family: 'Graduate', cursive;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 2rem;
+  background: #0053cd;
+  color: #fdf151;
+  padding: 2%;
+  border: 5px solid #fdf151;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8); }
+  .button a {
+    text-decoration: none;
+    color: #fdf151; }
+
+.header {
+  background-image: url(/assets/football-stadium.png);
+  height: 105vh; }
+
+main {
+  padding: 20px; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+
+.intro {
+  background: #FAFAFA;
+  padding: 3%;
+  width: 100%;
+  margin: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8); }
+
+label, select, input {
+  margin: 2% 0; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+select {
+  width: 50%;
+  height: 80px;
+  padding: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #282a2d;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8); }
+
+option {
+  padding: 5PX; }
+
+.quote-container {
+  position: relative;
+  display: block;
+  height: 50vh;
+  width: 100%;
+  border-radius: 15px;
+  background-image: url(/assets/Coach-Taylor.jpg);
+  background-size: cover;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8); }
+
+.quote-block {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: #282a2d;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2%;
+  color: #FAFAFA; }
+
+footer {
+  background: #282a2d;
+  height: 20vh; }

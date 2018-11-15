@@ -1,1 +1,94 @@
-// FONT STYLES ----------------------
+// KEY COLORS ----------------------
+// $text-color: #FAFAFA;
+$bg-color: #FAFAFA;
+$text-color: #282a2d;
+$panthers-blue: #0053cd;
+$panthers-gold:#fdf151;
+
+// DEFAULT STYLING ------------------
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: $bg-color;
+}
+
+// LAYOUT STYLING ------------------
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+// FONT MIXINS ----------------------
+
+@mixin base-font($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin heading-text {   
+    font-family: 'Graduate', cursive;
+    color: $bg-color;
+    text-transform: uppercase;
+}
+
+@mixin copy-text {
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+
+}
+
+// BOX SHADOW --------------------------
+
+@mixin box-shadow {
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); 
+   
+}
+
+// COPY STYLES---------------------------
+.body-copy {
+    @include copyText;
+    @include baseFont(20);
+    line-height: 2.8rem;
+}
+
+.title {
+    @include headingText;
+    @include baseFont(120);
+    margin: 0;
+    text-align: center;
+    padding: 5% 0;
+    text-shadow: 0 0 3px $panthers-gold, 0 0 3px $panthers-gold, 0 0 3px $panthers-gold;  
+}
+
+.sub-title {
+    @extend .title;
+    @include baseFont(65);
+}
+
+
+
+.button {
+    @include headingText;
+    @include baseFont(20);
+    background: $panthers-blue;
+    color: $panthers-gold;    
+    padding: 2%;
+    border: 5px solid $panthers-gold;
+    border-radius: 15px;  
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);   
+    & a {
+        text-decoration: none;
+        color: $panthers-gold;
+    }
+}
+
+
+
