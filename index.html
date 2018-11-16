@@ -5,73 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coach Taylor Random Quizz Generator</title>
-    <link href="https://fonts.googleapis.com/css?family=Graduate|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="styles/_style.css">
+    <link type="image/png" href="texas.png" rel="icon">
     
 </head>
 
 <body>
 
+<!-- MAIN HEADER / INTRO SECTION -->
+
     <header class="header"> 
         <div class="wrapper">
-            <div class="flex-container">
+          <div class="flex-container">          
                 <div class="title-container">
                     <h1 class="title">Random Pep Talks</h1>
                     <h2 class="sub-title">With Coach Taylor</h2>
                 </div> 
-    
+
                 <div class="intro">
-                    <p class ="body-copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ea quam voluptatem sit, quasi eos dolorem ullam ipsa, mollitia expedita labore vitae necessitatibus quo, blanditiis quisquam cumque? Alias repudiandae amet, vitae voluptatem illo provident non?</p>
+                    <h3 class="intro-title">Talk to me, Sport.</h3>
+                    <p class ="body-copy">What's got you down? Nervous about the big game? Pick a topic below and let Coach Taylor give you some real talk. Texas forever.</p>
                 </div>
 
-                <div class="button">
-                    <a href="#start" class="scroll-button">Help me out, Coach</a>
+                <div class="button animated infinite pulse">
+                    <a href="#start" class="scroll-button">Help me out, Coach!</a>
                 </div>
             </div>
         </div>
     </header>
         
 <!-- QUOTE GENERATOR SECTION -->
+
     <main> 
         <div class="wrapper" id="start">
             <section class="quote-input">               
-                <div class="quote-selector">
-                    <form action="" id="start">
-                        <label class="body-copy" for="category">What's on your mind, Champ? (Pick a topic)</label>
-                            
-                        <select name="category" id="category">
-                            <option value="motivation">I need some motivation</option>
-                            <option value="quitting">I feel like quitting</option>
-                            <option value="defeated">I feel so defeated</option>
-                        </select>
-                            
-                        <input class="button" type="submit" value="Give it to me straight, Coach.">                       
-                    </form>
-                </div>   
+                <form action="" id="start">
+                    <label class="body-copy" for="category">What's on your mind, Champ? (Pick a topic)</label>
+                        
+                    <select name="category" id="category">
+                        <option value="motivation">I need some motivation</option>
+                        <option value="quitting">I feel like quitting</option>
+                        <option value="defeated">I feel so defeated</option>
+                    </select>
+                        
+                    <input id="result-button" class="button" type="submit" value="Give it to me straight!">                       
+                </form>             
             </section>
         </div>
             
         <div class="quote-wrapper">
             <div class="wrapper">
-                <section class="quote-container">
+                <section id="result-box" class="quote-container">
                     <div class="quote-block"></div>
                 </section> 
             </div>
         </div>
-                               
-
     </main>
         
 
         
     <footer>
+        <p class="body-copy-footer"><i class="fas fa-football-ball"></i>  Made with clear eyes and a full heart by Sam Sakhavarz &copy2018  <i class="fas fa-football-ball"></i></p>
+        <div class="social-contacts">
+            <a href="https://www.linkedin.com/in/samsakhavarz/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/samsakhavarz"><i class="fab fa-github-alt"></i></a>
+            <a href="https://twitter.com/samsakhavarz"><i class="fab fa-twitter"></i></a>
+        </div>
             
     </footer>
     
 
 
 
-
+<!-- JS SCRIPTS -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>

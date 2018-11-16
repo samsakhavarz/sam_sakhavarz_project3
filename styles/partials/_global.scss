@@ -40,7 +40,7 @@ body {
 }
 
 @mixin copy-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $text-color;
 
 }
@@ -52,41 +52,87 @@ body {
    
 }
 
-// COPY STYLES---------------------------
+// TYPOGRAPHY ---------------------------
 .body-copy {
-    @include copyText;
-    @include baseFont(20);
+    @include copy-text;
+    @include base-font(20);
     line-height: 2.8rem;
+    margin: 0;
+    letter-spacing: 1.2px;
 }
 
 .title {
-    @include headingText;
-    @include baseFont(120);
+    @include heading-text;
+    @include base-font(120);
     margin: 0;
     text-align: center;
-    padding: 5% 0;
-    text-shadow: 0 0 3px $panthers-gold, 0 0 3px $panthers-gold, 0 0 3px $panthers-gold;  
+    text-shadow: $panthers-gold 0 0 0.2em, $panthers-gold 0 0 0.2em; 
 }
+
 
 .sub-title {
     @extend .title;
-    @include baseFont(65);
+    @include base-font(50);
+    margin: 2% 0 2% 0;
 }
 
 
+.intro-title {
+    @include base-font(25);
+    @include copy-text;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+}
+
 
 .button {
-    @include headingText;
-    @include baseFont(20);
+    @include heading-text;
+    @include base-font(20);
+    @include box-shadow;
+    flex-shrink: 0;
+    width: 50%;
     background: $panthers-blue;
     color: $panthers-gold;    
     padding: 2%;
     border: 5px solid $panthers-gold;
     border-radius: 15px;  
-    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);   
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+    text-align: center;   
     & a {
         text-decoration: none;
         color: $panthers-gold;
+    }
+}
+
+@media (max-width: 768px) {   
+    .title {
+        @include base-font(100);
+    }
+    .sub-title {
+        @include base-font(40);
+    }
+    .intro-title {
+        @include base-font(22);
+    }
+    .body-copy {
+        @include base-font(18);
+    }
+    .button {
+        @include base-font(16);
+    }
+}
+
+@media (max-width: 585px) {
+    .title {
+        @include base-font(80);
+    }
+    .sub-title {
+        @include base-font(30);
+    }
+    .button {
+        width: 95%;
     }
 }
 

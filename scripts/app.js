@@ -21,7 +21,7 @@
     $(function () {
         quoteApp.init();
 
-// add smooth scroll effect to get to quote generator.
+// smooth scroll effect to get to quote generator.
 // SOURCE (to learn about using hash with JQuery animate methods!: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 
         $('a').on('click', function(e) {
@@ -34,6 +34,12 @@
                     window.location.hash = hash;
                 });
             }
+        });
+
+// add smooth scroll effect to move from submit button to see result.
+
+        $('#result-button').on('click', function() {
+            $('html, body').animate({scrollTop: $('#result-box').offset().top}, 800);
         });
     });
   
@@ -85,7 +91,7 @@
             console.log(randomQuote);
 
         // display random quote onto page:          
-            $('.quote-block').html(`<p> "${randomQuote}" </p>`);
+            $('.quote-block').html(`<p>"${randomQuote}"</p>`);
                                  
         });      
     }

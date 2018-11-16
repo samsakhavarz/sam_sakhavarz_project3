@@ -1,0 +1,136 @@
+
+
+// QUOTE GENERATOR SECTION ---------
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: space-between;
+    align-items: center;
+
+    label.body-copy {
+        font-weight: bold;
+        @include base-font(25);
+        padding-bottom: 2%;
+    }
+
+    select {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      font-size: 1.8rem;
+      text-align: center;
+      @include copy-text;
+      @include box-shadow;
+    }
+
+    option {
+      padding: 5PX;
+    }
+
+    input {
+        margin: 2% 0 4% 0;
+        flex-shrink: 0;
+    }
+}
+
+// QUOTE SECTION ------------------
+
+.quote-input {
+    margin: 15% 0 13% 0;
+}
+
+.quote-wrapper {
+    background: $panthers-blue;
+    padding: 15% 0;
+}
+.quote-container {
+    position: relative;
+    display: block;
+    height: 50vh;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(/assets/Coach-Taylor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include box-shadow; 
+    border: 5px solid $panthers-gold;
+    
+    &img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.quote-block {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    border-radius: 15px;
+    @include copy-text;
+    @include base-font(26);
+    text-align: center;
+    padding: 2%;
+    color: $bg-color;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.3px;
+}
+
+
+// FOOTER SECTION -----------------
+
+footer {
+    background: $text-color;
+    height: 25vh;
+    padding: 6% 2% 6% 2%;
+
+        .body-copy-footer {
+            @include copy-text;
+            @include base-font(16);
+            color: $panthers-gold;
+            margin: auto;
+            text-align: center;
+            letter-spacing: 1.3px;                   
+        }    
+}
+
+.social-contacts {
+    text-align: center;
+
+    & a  {
+    color: $panthers-gold;
+    @include base-font(20);
+    display: inline-block;           
+    text-align: center; 
+    padding: 25px 30px;        
+    }                
+}
+
+@media(max-width: 768px) {
+    form label.body-copy {
+        @include base-font(20);
+    }   
+    .quote-block {
+        @include base-font(20);
+    }
+}
+
+@media(max-width: 585px) {
+    .quote-container {
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%), url(/assets/coach-taylor-mobile.jpg);
+    }    
+    .quote-block {
+        @include base-font(16);
+    }
+    footer {
+        padding: 10% 2%;
+
+        .body-copy-footer {
+            @include base-font(12);
+            letter-spacing: 1px;
+        }
+    }
+    
+}

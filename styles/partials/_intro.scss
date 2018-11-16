@@ -1,0 +1,53 @@
+// MAIN HEADER / INTRO SECTION ------------------
+
+.header {
+    // background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgba(0,0,0,0)), url(/assets/football-stadium.png);
+    background-image: linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%), url(/assets/football-stadium.png) ;
+    height: 100vh;
+}
+
+
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    .title-container {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .intro {
+        background: $bg-color;
+        width: 65%;
+        margin: 4% 0 6% 0;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); 
+        @extend .intro;
+        p {
+            padding: 2% 8% 5% 8%;
+            text-align: center;
+            letter-spacing: 1.3px;
+        } 
+    }
+}
+
+@media (max-width: 768px) {
+    .title-container {
+        padding-top: 10%;
+    }
+
+}
+
+@media (max-width: 585px) {
+    .title-container {
+        padding-top: 15%;
+    }
+    .intro {
+        width: 100%;
+    }
+}
+
+// CTA BUTTON CSS CAN BE FOUND AT GLOBAL STYLES.SCSS PARTIAL.
