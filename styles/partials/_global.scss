@@ -61,7 +61,6 @@ body {
 .title {
     @include heading-text;
     @include base-font(120);
-    margin: 0;
     text-align: center;
     text-shadow: $panthers-gold 0 0 0.2em, $panthers-gold 0 0 0.2em;        
 }
@@ -121,7 +120,7 @@ body {
 
 @media (max-width: 585px) {
     .title {
-        @include base-font(80);
+        @include base-font(60);
     }
     .sub-title {
         @include base-font(30);
@@ -130,6 +129,7 @@ body {
         width: 95%;
     }
 }
+
 
 
 
