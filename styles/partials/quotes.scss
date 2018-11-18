@@ -1,6 +1,17 @@
 
 
-// QUOTE GENERATOR SECTION ---------
+// QUOTE GENERATOR INPUTS SECTION ---------
+.back-drop {
+    background: linear-gradient(to bottom,rgba(255,255,255,0.8)), url(/assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
+    padding: 1% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-input {
+    margin: 22% 0 20% 0;
+    
+}
 
 form {
     display: flex;
@@ -11,8 +22,8 @@ form {
 
     label.body-copy {
         font-weight: bold;
-        @include base-font(25);
-        padding-bottom: 2%;
+        @include base-font(30);
+        padding: 2% 0 9% 0;
     }
 
     select {
@@ -25,21 +36,15 @@ form {
       @include box-shadow;
     }
 
-    option {
-      padding: 5PX;
-    }
 
     input {
-        margin: 2% 0 4% 0;
+        margin: 10% 0 2% 0;
         flex-shrink: 0;
     }
 }
 
-// QUOTE SECTION ------------------
+// QUOTE GENERATOR RESULTS SECTION ------------------
 
-.quote-input {
-    margin: 15% 0 13% 0;
-}
 
 .quote-wrapper {
     background: $panthers-blue;
@@ -48,10 +53,10 @@ form {
 .quote-container {
     position: relative;
     display: block;
-    height: 50vh;
+    height: 65vh;
     width: 100%;
     border-radius: 15px;
-    background-image: url(/assets/Coach-Taylor.jpg);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%), url(/assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     @include box-shadow; 
@@ -84,7 +89,7 @@ form {
 footer {
     background: $text-color;
     height: 25vh;
-    padding: 6% 2% 6% 2%;
+
 
         .body-copy-footer {
             @include copy-text;
@@ -92,16 +97,23 @@ footer {
             color: $panthers-gold;
             margin: auto;
             text-align: center;
-            letter-spacing: 1.3px;                   
-        }    
+            letter-spacing: 1.3px; 
+            padding-top: 3.5%;                  
+        } 
+        
+        i {
+            font-size: 2rem;
+            padding: 5px;
+        }
 }
+
 
 .social-contacts {
     text-align: center;
 
     & a  {
     color: $panthers-gold;
-    @include base-font(20);
+    @include base-font(30);
     display: inline-block;           
     text-align: center; 
     padding: 25px 30px;        
@@ -117,9 +129,10 @@ footer {
     }
 }
 
+
 @media(max-width: 585px) {
     .quote-container {
-        background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%), url(/assets/coach-taylor-mobile.jpg);
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.8) 100%), url(/assets/coach-taylor-mobile.jpg);
     }    
     .quote-block {
         @include base-font(16);

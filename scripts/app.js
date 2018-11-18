@@ -5,15 +5,15 @@
     // they can then click a button to go back and make another quote
 
 // JS MECHANICS -----------
-    // 1. store the quotes as strings in a set of arrays. there are 3 groups of quotes, separated by topic, so we will need 3 x arrays containing our strings. each array contains 5 quotes/strings. 15 quotes in total!
+    // 1. store the quotes as strings in a set of arrays. there are 3 groups of quotes, separated by topic, so we need 3 x arrays containing our strings. each array contains 5 quotes/strings. 15 quotes in total!
 
     // 2. a form, using the select/option(drop-down) will enable user to select their quote topic.
 
-    // 3. selecting a topic, should enable access to the corresponding array 
+    // 3. selecting a topic, should access the corresponding array 
 
-    // 4. after the topic is selected, the submit button should iterate of the corresponding array and randomly select a quote from the list of 5 quotes.
+    // 4. after the topic is selected, the submit button generate a randomly selected a quote from the list of 5
 
-    // 5. the reset button should clear the current quote entry and revert back to a default state, so the user can start again
+
 
     const quoteApp = {};
 
@@ -22,7 +22,7 @@
         quoteApp.init();
 
 // smooth scroll effect to get to quote generator.
-// SOURCE (to learn about using hash with JQuery animate methods!: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+// SOURCE (learned about using hash with JQuery animate methods!: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 
         $('a').on('click', function(e) {
             if (this.hash !== "") {
@@ -36,14 +36,15 @@
             }
         });
 
-// add smooth scroll effect to move from submit button to see result.
+// smooth scroll effect to move from submit button to see result.
 
         $('#result-button').on('click', function() {
             $('html, body').animate({scrollTop: $('#result-box').offset().top}, 800);
         });
     });
   
-// list of quotes stored in 3 separate arrays by category:
+
+// array of quotes segmented by category:
 
     quoteApp.motivation = [
         "Opportunity does not knock. It presents itself when you beat down the door.",
@@ -72,7 +73,6 @@
 // initialize the app:
     quoteApp.init = function() {
         quoteApp.formSubmit();
-        // quoteApp.resetForm();
     }
 
 // listen for form to be submitted:
@@ -89,6 +89,7 @@
         // get a random quote from selected array:
             const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
             console.log(randomQuote);
+            
 
         // display random quote onto page:          
             $('.quote-block').html(`<p>"${randomQuote}"</p>`);
