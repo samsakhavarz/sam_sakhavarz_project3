@@ -159,8 +159,8 @@ body {
   font-family: 'Graduate', cursive;
   color: #FAFAFA;
   text-transform: uppercase;
-  font-size: 120px;
-  font-size: 12rem;
+  font-size: 100px;
+  font-size: 10rem;
   text-align: center;
   text-shadow: #fdf151 0 0 0.2em, #fdf151 0 0 0.2em; }
 
@@ -230,22 +230,24 @@ body {
 
 @media (max-width: 462px) {
   .title, .sub-title {
-    font-size: 40px;
-    font-size: 4rem; } }
+    font-size: 45px;
+    font-size: 4.5rem; }
+  .sub-title {
+    font-size: 25px;
+    font-size: 2.5rem; } }
 
 .header {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/assets/football-stadium.png);
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/football-stadium.png);
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/football-stadium.png);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/football-stadium.png);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../assets/football-stadium.png);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/football-stadium.png);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/football-stadium.png);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/football-stadium.png);
   height: 100vh; }
 
 .flex-container {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,8 +257,7 @@ body {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  overflow: auto; }
+  align-items: center; }
   .flex-container .title-container {
     width: 100%;
     margin-top: 5%; }
@@ -283,10 +284,10 @@ body {
     width: 100%; } }
 
 .back-drop {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(/assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8)), url(/assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8)), url(/assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8)), url(/assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8)), url(../assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8)), url(../assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8)), url(../assets/black-and-white-image-of-spectator-on-soccer-field.jpg);
   padding: 1% 0;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -338,10 +339,10 @@ form {
   height: 65vh;
   width: 100%;
   border-radius: 15px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/Coach-Taylor-Friday-Night-Lights-GIFs.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.8);
@@ -385,14 +386,14 @@ footer {
     padding: 5px; }
 
 .social-contacts {
-  text-align: center; }
+  text-align: center;
+  font-size: 30px;
+  font-size: 3rem; }
   .social-contacts a {
     color: #fdf151;
-    font-size: 30px;
-    font-size: 3rem;
     display: inline-block;
     text-align: center;
-    padding: 25px 30px; }
+    padding: 20px 25px; }
 
 @media (max-width: 768px) {
   form label.body-copy {
@@ -404,10 +405,10 @@ footer {
 
 @media (max-width: 585px) {
   .quote-container {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/assets/coach-taylor-mobile.jpg);
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/coach-taylor-mobile.jpg);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/coach-taylor-mobile.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(/assets/coach-taylor-mobile.jpg); }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../assets/coach-taylor-mobile.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/coach-taylor-mobile.jpg);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/coach-taylor-mobile.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%), url(../assets/coach-taylor-mobile.jpg); }
   .quote-block {
     font-size: 16px;
     font-size: 1.6rem; }
@@ -418,6 +419,6 @@ footer {
       font-size: 1.2rem;
       letter-spacing: 1px; } }
 
-@media (max-width: 480px) {
-  i {
-    display: none; } }
+@media (max-width: 485px) {
+  footer i {
+    font-size: 1.3rem; } }
