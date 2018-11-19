@@ -144,13 +144,11 @@ footer {
             @include base-font(12);
             letter-spacing: 1px;
         }
+    }    
+}
+
+@media(max-width: 480px) {
+     i {
+        display: none;
     }
-
-    i {
-        font-size: 1.3rem;
-        padding: 5px;
-        }
-
-
-    
 }

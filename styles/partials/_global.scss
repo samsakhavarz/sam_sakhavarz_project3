@@ -130,6 +130,12 @@ body {
     }
 }
 
+@media (max-width: 462px) {
+    .title {
+        @include base-font(40);
+    }
+}
+
 
 
 
