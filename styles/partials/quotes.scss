@@ -121,12 +121,16 @@ footer {
 }
 
 @media(max-width: 768px) {
+    .quote-input {
+        padding: 5% 0;
+    }
     form label.body-copy {
         @include base-font(20);
     }   
     .quote-block {
         @include base-font(20);
     }
+
 }
 
 
@@ -150,5 +154,11 @@ footer {
 @media(max-width: 485px) {
      footer i {
         font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 376px) {
+    .quote-input {
+        padding: 12% 0;
     }
 }
